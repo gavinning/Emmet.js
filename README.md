@@ -35,13 +35,13 @@ var divs=emmet('div*100');
 // Returns: [<div></div>,<div></div>,...,<div></div>]
 ```
 
-Create one hundred div incrementing the id (works with any attribute):
+Create one hundred div-s incrementing the id (works with any attribute):
 ```javascript
 var divs=emmet('div*100#d$');
 // Returns: [<div id="d1"></div>,<div id="d2"></div>,...,<div id="d101"></div>]
 ```
 
-Create one hundred div decrementing the id:
+Create one hundred div-s decrementing the id:
 ```javascript
 var divs=emmet('div*100#d$@-');
 // Returns: [<div id="d101"></div>,<div id="d100"></div>,...,<div id="d1"></div>]
