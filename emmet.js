@@ -269,6 +269,11 @@
 					else return false;
 				}
 			}
+
+			elements.emmet=function(selector) {
+				for(var i=0; i<this.length; i++) this[i].emmet(selector);
+			};
+			
 			return elements.length==1 ? elements[0] : elements;
 		}
 		else return false;
