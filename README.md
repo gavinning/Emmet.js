@@ -21,7 +21,7 @@ Or, using the minified version:
 ```
 
 ### Using
-Emmet.js is based on the emmet syntax so [just use it](http://docs.emmet.io/abbreviations/syntax/). In these examples, I'll represent DOM Elements by their HTML syntax, but they are DOM elements!
+Emmet.js is based on the emmet syntax so [just use it](http://docs.emmet.io/abbreviations/syntax/). In these examples, I'll represent Node objects by their HTML syntax, but they are Node objects!
 
 Create a div
 ```javascript
