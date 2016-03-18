@@ -251,16 +251,27 @@
 
 			var result=nestFix(makeTree(selector));
 			if(parent instanceof Node) {
+				var elements=[];
 				var r=true;
-				for(var i=0; i<result.length; i++) r=r && parent.appendChild(result[i].create());
-				return r===true ? (elements.length==1 ? elements[0] : elements) : false;
+				for(var i=0; i<result.length; i++) {
+					var el=result[i].create();
+					if(el!==false) {
+						elements.push(el);
+						parent.appendChild(el);
+					}
+					else r=false;
+				}
 			}
 			else {
 				var elements=[];
 				var r=true;
-				for(var i=0; i<result.length; i++) r=r && elements.push(result[i].create());
-				return r===true ? (elements.length==1 ? elements[0] : elements) :false;
+				for(var i=0; i<result.length; i++) {
+					var el=result[i].create();
+					if(el!==false) elements.push(el);
+					else r=false;
+				}
 			}
+			return r===true ? (elements.length==1 ? elements[0] : elements) : false;
 		}
 		else return false;
 	};
