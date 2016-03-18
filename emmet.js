@@ -1,7 +1,6 @@
 (function() {
 	window.emmet=function(selector,parent) {
 		if(typeof selector=='string') {
-			if(!(parent instanceof Node)) parent=document.body;
 
 			var nestFix=function(array) {
 				if(Array.isArray(array)) {
@@ -251,9 +250,17 @@
 			}
 
 			var result=nestFix(makeTree(selector));
-			var elements=[];
-			for(var i=0; i<result.length; i++) parent.appendChild(result[i].create());
-			return true;
+			if(parent instanceof Node) {
+				var r=true;
+				for(var i=0; i<result.length; i++) r=r && parent.appendChild(result[i].create());
+				return r===true ? (elements.length==1 ? elements[0] : elements) : false;
+			}
+			else {
+				var elements=[];
+				var r=true;
+				for(var i=0; i<result.length; i++) r=r && elements.push(result[i].create());
+				return r===true ? (elements.length==1 ? elements[0] : elements) :false;
+			}
 		}
 		else return false;
 	};
