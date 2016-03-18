@@ -59,7 +59,7 @@ document.body.emmet('div');
 // Appends a div in the body and returns: <div>
 ```
 
-Furthermore, you cans also use Emmet.js from any NodeList to directly append the element(s) inside each Node in the NodeList:
+Furthermore, you can also use Emmet.js from any NodeList to directly append the element(s) inside each Node in the NodeList:
 ```javascript
 document.getElementsByTagName('div').emmet('span');
 // Append a span inside each div of the document
