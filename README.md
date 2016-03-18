@@ -5,7 +5,7 @@ Use emmet syntax with Javascript.
 Beta 1
 
 ### Licence
-Emmet.js under GNU General Public License v3.0.
+Emmet.js is under GNU General Public License v3.0.
 
 ### Requirements
 Emmet.js does not require anything.
