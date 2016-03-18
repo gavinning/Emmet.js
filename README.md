@@ -28,31 +28,37 @@ Create a div
 var div=emmet('div');
 // Returns: <div>
 ```
+
 Create one hundred div-s:
 ```javascript
 var divs=emmet('div*100');
 // Returns: [<div></div>,<div></div>,...,<div></div>]
 ```
+
 Create one hundred div incrementing the id (works with any attribute):
 ```javascript
 var divs=emmet('div*100#d$');
 // Returns: [<div id="d1"></div>,<div id="d2"></div>,...,<div id="d101"></div>]
 ```
+
 Create one hundred div decrementing the id:
 ```javascript
 var divs=emmet('div*100#d$@-');
 // Returns: [<div id="d101"></div>,<div id="d100"></div>,...,<div id="d1"></div>]
 ```
+
 Create a span with text "Hello" inside a div:
 ```javascript
 var divAndSpan=emmet('div>span{Hello}');
 // Returns: <div><span>Hello</span></div>
 ```
+
 You can use Emmet.js from any Node in the DOM so it directly  appends the element(s) inside the Node (and return the element(s) as previously):
 ```javascript
 document.body.emmet('div');
 // Appends a div in the body and returns: <div>
 ```
+
 Furthermore, you cans also use Emmet.js from any NodeList to directly append the element(s) inside each Node in the NodeList:
 ```javascript
 document.getElementsByTagName('div').emmet('span');
