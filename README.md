@@ -68,4 +68,4 @@ document.getElementsByTagName('div').emmet('span');
 To have a more complete documentation, just go to [docs.emmet.io](http://docs.emmet.io/abbreviations/syntax/).
 
 ### Development
-Emmet.js is open to any kinf of contribution :)
+Emmet.js is open to any kind of contribution :)
