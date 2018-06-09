@@ -1,0 +1,24 @@
+{
+  "name": "@gavinning/emmet.js",
+  "version": "1.0.0",
+  "description": "Use emmet syntax with javascript",
+  "main": "emmet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gavinning/Emmet.js.git"
+  },
+  "keywords": [
+    "emmet",
+    "emmetjs",
+    "emmet.js"
+  ],
+  "author": "gavinning",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/gavinning/Emmet.js/issues"
+  },
+  "homepage": "https://github.com/gavinning/Emmet.js#readme"
+}
